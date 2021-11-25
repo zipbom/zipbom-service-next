@@ -1,4 +1,4 @@
-import AppLayout from "@components/AppLayout";
+import ServiceLayout from "@components/templates/ServiceLayout";
 import Head from "next/head";
 
 const SignUp = () => {
@@ -7,9 +7,9 @@ const SignUp = () => {
       <Head>
         <title>Zipbom | 회원 가입</title>
       </Head>
-      <AppLayout>
+      <ServiceLayout>
         <div>사인업</div>
-      </AppLayout>
+      </ServiceLayout>
     </>
   );
 };

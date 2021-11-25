@@ -1,4 +1,4 @@
-import AppLayout from "@components/AppLayout";
+import ServiceLayout from "@components/templates/ServiceLayout";
 import Head from "next/head";
 
 const Profile = () => {
@@ -7,9 +7,9 @@ const Profile = () => {
       <Head>
         <title>Zipbom | 프로필</title>
       </Head>
-      <AppLayout>
+      <ServiceLayout>
         <div>내 프로필</div>
-      </AppLayout>
+      </ServiceLayout>
     </>
   );
 };

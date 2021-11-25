@@ -8,9 +8,11 @@
   - typescript
   - eslint, prettier
   - styled-component, antd
+  - atomic 스타일의 파일구조
 
   ## 앞으로 세팅해야할 것
-  - redux, 
+  - storybook
+  - redux, redux saga, redux toolkit
   - husky, commit lint, git hook
   - jest, enzyme
   - storybook
@@ -21,3 +23,9 @@
  ## 어떻게 해야할까
   - webpack, babel, rollup
   - craco는 필요없음
+
+ ## Api-convention
+  - domain = - 구분 소문자
+  - path = - 구분 소문자
+  - query = _(언더바) 구분 소문자 
+  - body = Camel Case

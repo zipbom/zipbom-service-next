@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import AppLayout from "@components/AppLayout";
+import ServiceLayout from "@components/templates/ServiceLayout";
 import Head from "next/head";
 // import Image from "next/image";
 // import styles from "../styles/Home.module.css";
@@ -10,9 +10,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Zipbom | Home</title>
       </Head>
-      <AppLayout>
+      <ServiceLayout>
         <div>hello Next</div>
-      </AppLayout>
+      </ServiceLayout>
     </>
   );
 };
