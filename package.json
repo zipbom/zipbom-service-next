@@ -6,7 +6,9 @@
     "dev": "start http://localhost:3000 && next dev",
     "build": "next build",
     "start": "next start -p 8080",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -17,6 +19,13 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/builder-webpack5": "^6.3.12",
+    "@storybook/manager-webpack5": "^6.3.12",
+    "@storybook/react": "^6.3.12",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.2",
     "@types/react": "^17.0.30",
@@ -24,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "babel-jest": "27.3.1",
+    "babel-loader": "^8.2.3",
     "eslint": "^7.0.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "^11.1.2",
