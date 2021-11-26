@@ -6,5 +6,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  typescript: { reactDocgen: false },
 };
