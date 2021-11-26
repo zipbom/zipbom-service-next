@@ -10,13 +10,12 @@
   - eslint, prettier
   - styled-component, antd
   - atomic 스타일의 파일구조
+  - storybook
 
   ## 앞으로 세팅해야할 것
-  - storybook
   - redux, redux saga, redux toolkit
   - husky, commit lint, git hook
   - jest, enzyme
-  - storybook
   - .env
   - axios
   - react-proxy..?
