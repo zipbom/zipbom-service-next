@@ -21,7 +21,8 @@
     "baseUrl": ".",
     "paths": {
       "@components/*":["src/components/*"],
-      "@pages/*":["pages/*"]
+      "@pages/*":["pages/*"],
+      "@stories/*":["src/stories/*"],
     }
   },
   "include": [
