@@ -15,7 +15,7 @@
 
   ## 앞으로 세팅해야할 것
   - redux, redux saga, redux toolkit
-  
+  - global theme, svg setting
   - jest, enzyme
   - .env
   - axios
