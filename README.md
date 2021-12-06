@@ -18,8 +18,10 @@
   - global theme, svg setting
   - jest, enzyme
   - .env
-  - axios
+  - axios, swr
   - react-proxy..?
+  - qs
+  - react query
 
  ## 어떻게 해야할까
   - webpack, babel, rollup
@@ -28,5 +30,5 @@
  ## Api-convention
   - domain = - 구분 소문자
   - path = - 구분 소문자
-  - query = _(언더바) 구분 소문자 
+  - query = Camel Case
   - body = Camel Case
