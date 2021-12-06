@@ -22,6 +22,8 @@
   - react-proxy..?
   - qs
   - react query
+  - lodash
+  - i18n
 
  ## 어떻게 해야할까
   - webpack, babel, rollup
