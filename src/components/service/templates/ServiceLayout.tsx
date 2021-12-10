@@ -1,4 +1,4 @@
-import ServiceNavigation from "@components/main/organisms/ServiceNavigation";
+import ServiceNavigation from "@components/service/organisms/ServiceNavigation";
 
 const ServiceLayout: React.FC = ({ children }) => {
   return (

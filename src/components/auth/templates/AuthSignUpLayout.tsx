@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { KakaoSignUpButton } from "@components/auth/templates/styles/KakaoSignUpLayoutStyle";
+import { KakaoSignUpButton } from "@components/auth/templates/styles/AuthSignUpLayoutStyle";
 
 interface Data {
   data: any;
@@ -21,8 +21,7 @@ const KakaoSignUpLayout: React.FC = () => {
 
   return (
     <>
-      <h1>카카오톡 간편 로그인</h1>
-      <h4>로그인 후 더 많은 혜택을 누리세요!</h4>
+      <h1>SNS 로그인</h1>
       <br />
       <KakaoSignUpButton
         token="0bc49585a7075990aec9f91ee3ba96ff"

@@ -1,4 +1,4 @@
-import ServiceLayout from "@components/main/templates/ServiceLayout";
+import ServiceLayout from "@components/service/templates/ServiceLayout";
 import Head from "next/head";
 
 const Profile = () => {

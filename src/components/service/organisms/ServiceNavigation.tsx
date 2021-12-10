@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Input, Menu } from "antd";
-import ServiceMenuItem from "@components/main/molcules/ServiceMenuItem";
+import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
 
 const ServiceNavigation: React.FC = () => {
   return (

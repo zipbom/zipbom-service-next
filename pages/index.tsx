@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import ServiceLayout from "@components/main/templates/ServiceLayout";
+import ServiceLayout from "@components/service/templates/ServiceLayout";
 import Head from "next/head";
 import {} from "react-device-detect";
 // import Image from "next/image";
