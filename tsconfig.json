@@ -22,6 +22,8 @@
     "paths": {
       "@components/*":["src/components/*"],
       "@pages/*":["pages/*"],
+      "@stores/*":["src/stores/*"],
+      "@repositories/*":["src/stores/repositories/*"],
       "@stories/*":["src/stories/*"],
     }
   },
