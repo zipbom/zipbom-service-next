@@ -12,15 +12,14 @@
   - atomic 스타일의 파일구조
   - storybook
   - husky, git hook precommit commit=message
+  - mobx
+  - axios, qs
 
   ## 앞으로 세팅해야할 것
-  - redux, redux saga, redux toolkit
   - global theme, svg setting
   - jest, enzyme
   - .env
-  - axios, swr
   - react-proxy..?
-  - qs
   - react query
   - lodash
   - i18n
