@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <>
       <Head>
-        <title>Zipbom | Profile</title>
+        <title>Zipbom | 프로필</title>
       </Head>
       <ServiceLayout>
         <div>내 프로필</div>
