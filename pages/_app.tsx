@@ -15,14 +15,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const currentDevice = useMobileDetect();
   console.log("isMobile: ", currentDevice.isMobile());
   return (
-      <Provider store={ServiceStore}>
-        <CoreStoreProvider>
+    <Provider store={ServiceStore}>
+      <CoreStoreProvider>
         <ThemeProvider theme={ThemeStore.theme}>
           <GlobalCommonStyle />
           <Component {...pageProps} />
         </ThemeProvider>
-        </CoreStoreProvider>
-      </Provider>
+      </CoreStoreProvider>
+    </Provider>
   );
 };
 
