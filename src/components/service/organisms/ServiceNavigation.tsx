@@ -1,11 +1,18 @@
 import Link from "next/link";
 import { Input, Menu } from "antd";
 import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
+import ThemeStore from "@stores/ThemeStore";
+import { Observer } from "mobx-react";
+import { TestComponent } from "zipbom-react-core";
 
 const ServiceNavigation: React.FC = () => {
   return (
     <>
-      <Menu mode="horizontal">
+      {/* <Observer> */}
+      <Menu
+        mode="horizontal"
+        style={{ background: ThemeStore.theme.mainColor }}
+      >
         <Menu.Item>
           <Link href="/">
             <a>집봄</a>
@@ -26,6 +33,8 @@ const ServiceNavigation: React.FC = () => {
         </Menu.Item>
         <ServiceMenuItem />
       </Menu>
+      <TestComponent />
+      {/* </Observer> */}
     </>
   );
 };
