@@ -3,7 +3,7 @@ import { Input, Menu } from "antd";
 import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
 import ThemeStore from "@stores/ThemeStore";
 import { Observer } from "mobx-react";
-import { TestComponent } from "zipbom-react-core";
+import { TestComponent } from "zipbom-core-react-lib";
 
 const ServiceNavigation: React.FC = () => {
   return (
