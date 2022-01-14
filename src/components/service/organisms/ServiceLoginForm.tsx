@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Form from "antd";
+import { Form } from "antd";
 
 const ServiceLoginForm: React.FC = () => {
   const [id, setId] = useState("");
