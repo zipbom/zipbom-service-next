@@ -35,7 +35,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>// 생략</Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
