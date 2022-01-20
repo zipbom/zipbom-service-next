@@ -3,12 +3,10 @@ import { Input, Menu } from "antd";
 import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
 import ThemeStore from "@stores/ThemeStore";
 import { Observer } from "mobx-react";
-import { TestComponent } from "zipbom-core-react-lib";
 
 const ServiceNavigation: React.FC = () => {
   return (
     <>
-      {/* <Observer> */}
       <Menu
         mode="horizontal"
         style={{ background: ThemeStore.theme.mainColor }}
@@ -33,8 +31,6 @@ const ServiceNavigation: React.FC = () => {
         </Menu.Item>
         <ServiceMenuItem />
       </Menu>
-      <TestComponent />
-      {/* </Observer> */}
     </>
   );
 };

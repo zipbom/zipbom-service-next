@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.3.0",
     "antd": "^4.16.13",
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
@@ -24,8 +27,7 @@
     "react-dom": "^17.0.2",
     "react-kakao-login": "2.1.0",
     "styled-components": "^5.3.3",
-    "styled-reset": "^4.3.4",
-    "zipbom-core-react-lib": "git+https://github.com/zipbom/zipbom-core-react-lib.git#develop"
+    "styled-reset": "^4.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
