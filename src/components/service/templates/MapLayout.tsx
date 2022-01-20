@@ -49,6 +49,13 @@ const MapView: React.FC = () => {
       setYNECoord(map.getBounds().getNE().y);
       setXSWCoord(map.getBounds().getSW().x);
       setYSWCoord(map.getBounds().getSW().y);
+      console.log(
+        `NE x좌표: ${map.getBounds().getNE().x} NE y좌표: ${
+          map.getBounds().getNE().y
+        } SW x좌표: ${map.getBounds().getSW().x} SW y좌표: ${
+          map.getBounds().getSW().y
+        } zoom: ${map.getZoom()}`,
+      );
     }, 400);
     naver.maps.Event.addListener(map, "bounds_changed", getBounds);
   };
@@ -59,11 +66,6 @@ const MapView: React.FC = () => {
   return (
     <>
       <div id="map" style={mapStyle} />
-      <div>NE x좌표: {xNECoord}</div>
-      <div>NE y좌표: {yNECoord}</div>
-      <div>SW x좌표: {xSWCoord}</div>
-      <div>SW y좌표: {ySWCoord}</div>
-      <div>zoom: {zoom}</div>
     </>
   );
 };
