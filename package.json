@@ -16,6 +16,7 @@
     "@ant-design/icons": "^4.7.0",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.3.0",
     "@mui/material": "^5.3.0",
     "@reduxjs/toolkit": "1.7.1",
     "antd": "^4.16.13",

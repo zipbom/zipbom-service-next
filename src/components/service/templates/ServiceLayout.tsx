@@ -1,9 +1,9 @@
-import ServiceNavigation from "@components/service/organisms/ServiceNavigation";
+import ServiceGNB from "@components/service/organisms/ServiceGNB";
 
 const ServiceLayout: React.FC = ({ children }) => {
   return (
     <>
-      <ServiceNavigation />
+      <ServiceGNB />
       {children}
     </>
   );

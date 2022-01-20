@@ -1,0 +1,79 @@
+import Link from "next/link";
+import { Input, Menu } from "antd";
+import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
+import ThemeStore from "@stores/ThemeStore";
+import { Observer } from "mobx-react";
+import { styled } from "@mui/material/styles";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import MoreIcon from "@mui/icons-material/MoreVert";
+
+import { MainLogo } from "../../../assets/Icons";
+import SiderBar from "./ServiceSiderBar";
+
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  alignItems: "flex-start",
+  paddingTop: theme.spacing(1),
+  paddingBottom: theme.spacing(2),
+  // Override media queries injected by theme.mixins.toolbar
+  "@media all": {
+    minHeight: 128,
+  },
+}));
+
+const ServiceGNB: React.FC = () => {
+  return (
+    <>
+      <AppBar position="static" sx={{ backgroundColor: "#5C9BFC" }}>
+        <Toolbar>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{
+              flexGrow: 1,
+              textAlign: "center",
+              display: "flex",
+              justifyContent: "center",
+              aligIitems: "center",
+            }}
+          >
+            <MainLogo />
+          </Typography>
+          <SearchIcon />
+          <SiderBar />
+        </Toolbar>
+      </AppBar>
+      {/* <Menu
+        mode="horizontal"
+        style={{ background: ThemeStore.theme.mainColor }}
+      >
+        <Menu.Item>
+          <Link href="/">
+            <a>집봄</a>
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/profile">
+            <a>프로필</a>
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Link href="/signup">
+            <a>회원가입</a>
+          </Link>
+        </Menu.Item>
+        <Menu.Item>
+          <Input.Search enterButton style={{ verticalAlign: "middle" }} />
+        </Menu.Item>
+        <ServiceMenuItem />
+      </Menu> */}
+    </>
+  );
+};
+
+export default ServiceGNB;
