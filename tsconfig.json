@@ -23,8 +23,8 @@
       "@components/*":["src/components/*"],
       "@hooks/*":["src/hooks/*"],
       "@pages/*":["pages/*"],
-      "@stores/*":["src/stores/*"],
-      "@repositories/*":["src/stores/repositories/*"],
+      "@store/*":["src/store/*"],
+      "@repositories/*":["src/store/repositories/*"],
       "@stories/*":["src/stories/*"],
       "@theme/*":["src/theme/*"],
     }
