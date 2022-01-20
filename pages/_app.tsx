@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 import { ThemeProvider } from "styled-components";
 import GlobalCommonStyle from "@components/GlobalCommonStyle";
 import useMobileDetect from "@hooks/useMobileDetect";
-import theme from "@theme/theme";
+import theme from "@theme";
 import wrapper from "@store/configureStore";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {

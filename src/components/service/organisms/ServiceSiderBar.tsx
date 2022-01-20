@@ -4,7 +4,12 @@ import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 
-const SiderBar: React.FC = ({ onClose = () => {}, visible: boolean }) => {
+const SiderBar: React.FC = ({
+  onClose = () => {
+    console.log("closed");
+  },
+  visible: boolean,
+}) => {
   const [drawerVisible, setDrawerVisible] = useState(false);
 
   const toggleDrawer = open => event => {
