@@ -8,16 +8,15 @@
   - next, react, react-dom
   - typescript
   - eslint, prettier
-  - styled-component, antd
-  - atomic 스타일의 파일구조
+  - material, emotion
   - storybook
   - husky, git hook precommit commit=message
-  - mobx
   - axios, qs
+  - atomic 스타일의 파일구조
 
   ## 앞으로 세팅해야할 것
+  - redux, redux saga, redux toolkit, redux thunk
   - global theme, svg setting
-  - jest, enzyme
   - .env
   - react-proxy..?
   - react query
