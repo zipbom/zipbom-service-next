@@ -26,6 +26,7 @@
       "@stores/*":["src/stores/*"],
       "@repositories/*":["src/stores/repositories/*"],
       "@stories/*":["src/stories/*"],
+      "@theme/*":["src/theme/*"],
     }
   },
   "include": [

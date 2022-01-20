@@ -6,12 +6,13 @@ import "antd/dist/antd.css";
 import { ThemeProvider } from "styled-components";
 import GlobalCommonStyle from "@components/GlobalCommonStyle";
 import useMobileDetect from "@hooks/useMobileDetect";
+import theme from "@theme/theme";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const currentDevice = useMobileDetect();
   console.log("isMobile: ", currentDevice.isMobile());
   return (
-    <ThemeProvider theme={ThemeStore.theme}>
+    <ThemeProvider theme={theme}>
       <GlobalCommonStyle />
       <Component {...pageProps} />
     </ThemeProvider>

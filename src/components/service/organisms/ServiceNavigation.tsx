@@ -1,15 +1,11 @@
 import Link from "next/link";
 import { Input, Menu } from "antd";
 import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
-import ThemeStore from "@stores/ThemeStore";
 
 const ServiceNavigation: React.FC = () => {
   return (
     <>
-      <Menu
-        mode="horizontal"
-        style={{ background: ThemeStore.theme.mainColor }}
-      >
+      <Menu mode="horizontal">
         <Menu.Item>
           <Link href="/">
             <a>집봄</a>

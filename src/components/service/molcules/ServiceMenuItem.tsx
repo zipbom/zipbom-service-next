@@ -20,7 +20,7 @@ const ServiceMenuItem: React.FC = () => {
         </Radio.Group>
       </Menu.Item>
     </>
-  ));
+  );
 };
 
 export default ServiceMenuItem;
