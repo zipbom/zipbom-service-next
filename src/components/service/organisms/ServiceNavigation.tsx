@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Input, Menu } from "antd";
 import ServiceMenuItem from "@components/service/molcules/ServiceMenuItem";
 import ThemeStore from "@stores/ThemeStore";
-import { Observer } from "mobx-react";
 
 const ServiceNavigation: React.FC = () => {
   return (

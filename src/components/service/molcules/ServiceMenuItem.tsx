@@ -1,14 +1,13 @@
 import { BellOutlined, SearchOutlined, MenuOutlined } from "@ant-design/icons";
 import { Menu, Radio } from "antd";
 import Link from "next/link";
-import { useObserver } from "mobx-react";
 
 const ServiceMenuItem: React.FC = () => {
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log("radio checked", e.target.value);
   };
 
-  return useObserver(() => (
+  return (
     <>
       <Menu.Item>
         <BellOutlined />
