@@ -13,7 +13,6 @@ module.exports = {
   plugins: ["prettier", "@typescript-eslint"],
   extends: [
     "airbnb",
-    "airbnb-base",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
@@ -27,6 +26,10 @@ module.exports = {
     "prettier/prettier": ["error", { endOfLine: "auto" }],
     "react/react-in-jsx-scope": 0,
     "jsx-a11y/anchor-is-valid": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/require-default-props": 0,
   },
   settings: {
     "import/parsers": {

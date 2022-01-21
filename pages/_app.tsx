@@ -1,12 +1,13 @@
 // types
 import type { AppProps } from "next/app";
-import { NextPage, NextPageContext } from "next";
+// import { NextPage, NextPageContext } from "next";
 // modules
 import "antd/dist/antd.css";
 import { ThemeProvider } from "styled-components";
 import GlobalCommonStyle from "@components/GlobalCommonStyle";
 import useMobileDetect from "@hooks/useMobileDetect";
-import theme from "@theme/theme";
+import theme from "@theme";
+import wrapper from "@store/configureStore";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const currentDevice = useMobileDetect();
@@ -19,4 +20,4 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   );
 };
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

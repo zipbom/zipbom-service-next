@@ -1,7 +1,8 @@
 import ServiceLayout from "@components/service/templates/ServiceLayout";
+import { NextPage } from "next";
 import Head from "next/head";
 
-const Profile = () => {
+const Profile: NextPage = () => {
   return (
     <>
       <Head>

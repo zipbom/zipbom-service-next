@@ -1,9 +1,9 @@
 import { BellOutlined, SearchOutlined, MenuOutlined } from "@ant-design/icons";
-import { Menu, Radio } from "antd";
-import Link from "next/link";
+import { Menu, Radio, RadioChangeEvent } from "antd";
+// import Link from "next/link";
 
 const ServiceMenuItem: React.FC = () => {
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = (e: RadioChangeEvent) => {
     console.log("radio checked", e.target.value);
   };
 
