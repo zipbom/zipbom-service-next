@@ -1,7 +1,10 @@
 import { action, computed, makeObservable, observable } from "mobx";
 import ServiceRepository from "src/stores/repositories/ServiceRepository";
-
-class ServiceStore {
+/**
+ * This store is for data fetch
+ */
+class ServiceDomainStore {
+  private rootStore;
   number = 0;
 
   constructor(rootStore) {
@@ -27,4 +30,4 @@ class ServiceStore {
   };
 }
 
-export default ServiceStore;
+export default ServiceDomainStore;

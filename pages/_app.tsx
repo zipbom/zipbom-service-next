@@ -8,18 +8,18 @@ import GlobalCommonStyle from "@components/GlobalCommonStyle";
 import useMobileDetect from "@hooks/useMobileDetect";
 import theme from "@theme/globalTheme";
 import { Provider } from "mobx-react";
-import ServiceStore from "src/stores/ServiceStore";
+import { StoresProvider } from "@stores/index";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const currentDevice = useMobileDetect();
   console.log("isMobile: ", currentDevice.isMobile());
   return (
-    <Provider store={ServiceStore}>
+    <StoresProvider>
       <ThemeProvider theme={theme}>
         <GlobalCommonStyle />
         <Component {...pageProps} />
       </ThemeProvider>
-    </Provider>
+    </StoresProvider>
   );
 };
 

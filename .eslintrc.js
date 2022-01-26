@@ -30,6 +30,7 @@ module.exports = {
     "import/extensions": 0,
     "import/no-extraneous-dependencies": 0,
     "react/require-default-props": 0,
+    "lines-between-class-members": 0,
   },
   settings: {
     "import/parsers": {
