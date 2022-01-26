@@ -10,6 +10,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import { MainLogo } from "../../../assets/Icons";
 import SiderBar from "./ServiceSiderBar";
+import FilterMenu from "../molcules/FilterMenu";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   alignItems: "flex-start",
@@ -43,6 +44,7 @@ const ServiceGNB: React.FC = () => {
           <SiderBar />
         </Toolbar>
       </AppBar>
+      <FilterMenu />
       {/* <Menu
         mode="horizontal"
         style={{ background: ThemeStore.theme.mainColor }}
