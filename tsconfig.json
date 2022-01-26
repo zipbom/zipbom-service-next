@@ -23,8 +23,8 @@
       "@components/*":["src/components/*"],
       "@hooks/*":["src/hooks/*"],
       "@pages/*":["pages/*"],
-      "@store/*":["src/store/*"],
-      "@repositories/*":["src/store/repositories/*"],
+      "@stores/*":["src/stores/*"],
+      "@repositories/*":["src/stores/repositories/*"],
       "@stories/*":["src/stories/*"],
       "@theme/*":["src/theme/*"],
     }
@@ -32,7 +32,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx" 
   ],
   "exclude": [
     "node_modules"

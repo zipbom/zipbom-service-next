@@ -6,6 +6,8 @@
   ## Nodejs version: 16.13.0 LTS
   ## 세팅 완료 한 것
   - next, react, react-dom
+  - mobx
+  - global theme,
   - typescript
   - eslint, prettier
   - material, emotion
@@ -15,8 +17,7 @@
   - atomic 스타일의 파일구조
 
   ## 앞으로 세팅해야할 것
-  - redux, redux saga, redux toolkit, redux thunk
-  - global theme, svg setting
+   svg setting
   - .env
   - react-proxy..?
   - react query
