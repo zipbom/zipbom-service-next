@@ -10,11 +10,11 @@ const ServiceLayout: React.FC = ({ children }) => {
   };
 
   return useObserver(() => (
-    <>
+    <div>
       <button onClick={handleTestStore}>{serviceDomainStore.number}</button>
       <ServiceGNB />
       {children}
-    </>
+    </div>
   ));
 };
 

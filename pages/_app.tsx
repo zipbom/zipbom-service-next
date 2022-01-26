@@ -8,7 +8,7 @@ import GlobalCommonStyle from "@components/GlobalCommonStyle";
 import useMobileDetect from "@hooks/useMobileDetect";
 import theme from "@theme/globalTheme";
 import { Provider } from "mobx-react";
-import { StoresProvider } from "@stores/index";
+import { StoresProvider } from "@stores";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const currentDevice = useMobileDetect();

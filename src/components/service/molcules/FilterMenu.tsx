@@ -12,36 +12,69 @@ const FilterMenu: React.FC = () => {
   };
 
   const styles = {
-    header: css`
-      background-color: blue;
-      margin-bottom: 1.45rem;
-    `,
-    link: css`
-      color: red;
-      text-decoration: none;
-    `,
-    title: css`
-      margin: 0 auto;
-      max-width: 960;
-      padding: 1.45rem 1.0875rem;
-    `,
-    list: css`
-      padding: 1rem;
+    chipList: css`
+      padding: 0.938rem;
       overflow: auto;
+      -ms-overflow-style: none;
+    `,
+    chip: css`
+      height: 1.75rem;
+      color: #555555;
+      border: 1px solid #dcdcdc;
     `,
   };
 
   return (
     <>
-      <Stack direction="row" spacing={1} sx={styles.list}>
-        <Chip label="Clickable" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
-        <Chip label="Clickable" variant="outlined" onClick={handleClick} />
+      <Stack direction="row" spacing={1} sx={styles.chipList}>
+        <Chip
+          label="매매"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="유형"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="평형"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="Clickable"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="Clickable"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="세대수"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="입주년차"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
+        <Chip
+          label="용적률"
+          sx={styles.chip}
+          variant="outlined"
+          onClick={handleClick}
+        />
       </Stack>
     </>
   );
