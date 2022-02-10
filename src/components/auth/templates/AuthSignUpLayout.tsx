@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { KakaoSignUpButton } from "@components/auth/templates/styles/AuthSignUpLayoutStyle";
 
 interface Data {
   data: any;
@@ -23,11 +22,12 @@ const KakaoSignUpLayout: React.FC = () => {
     <>
       <h1>SNS 로그인</h1>
       <br />
-      <KakaoSignUpButton
+      ${/*<KakaoSignUpButton
         token="0bc49585a7075990aec9f91ee3ba96ff"
         onSuccess={responseKaKao}
         onFail={responseFail}
-      />
+      />*/ }
+      
     </>
   );
 };

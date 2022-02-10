@@ -9,7 +9,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Zipbom | 프로필</title>
+        <title>Zipbom</title>
         <script
           type="text/javascript"
           src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=u27hpbj3bf"
