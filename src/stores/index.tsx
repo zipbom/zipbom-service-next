@@ -24,7 +24,6 @@ export const StoresProvider = ({ children }: { children: React.ReactNode }) => {
 
 export const useStores = () => {
   const store = useContext(StoresContext);
-
   if (!store) {
     throw new Error("useStores must be used within a StoreProvider");
   }

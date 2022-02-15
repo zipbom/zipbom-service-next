@@ -1,21 +1,23 @@
 import ServiceGNB from "@components/service/organisms/ServiceGNB";
-import { useObserver } from "mobx-react";
+import { observer } from "mobx-react";
 import { useStores } from "@stores/index";
 
-const ServiceLayout: React.FC = ({ children }) => {
+const ServiceLayout: React.FC = observer(({ children }) => {
   const { serviceDomainStore } = useStores();
 
   const handleTestStore: React.EventHandler = async e => {
     serviceDomainStore.increase();
   };
 
-  return useObserver(() => (
+  return (
     <div>
-      <button onClick={handleTestStore}>{serviceDomainStore.number}</button>
+      <button type="button" onClick={handleTestStore}>
+        {serviceDomainStore.number}
+      </button>
       <ServiceGNB />
       {children}
     </div>
-  ));
-};
+  );
+});
 
 export default ServiceLayout;
