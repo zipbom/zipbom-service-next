@@ -12,7 +12,7 @@ class RootStore {
   }
 }
 
-const StoresContext = React.createContext(null);
+const StoresContext = React.createContext({});
 
 export const StoresProvider = ({ children }: { children: React.ReactNode }) => {
   return (
