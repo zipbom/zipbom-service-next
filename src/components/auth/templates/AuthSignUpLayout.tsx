@@ -21,13 +21,12 @@ const KakaoSignUpLayout: React.FC = () => {
   return (
     <>
       <h1>SNS 로그인</h1>
-      <br />
-      ${/*<KakaoSignUpButton
+      <br />$
+      {/* <KakaoSignUpButton
         token="0bc49585a7075990aec9f91ee3ba96ff"
         onSuccess={responseKaKao}
         onFail={responseFail}
-      />*/ }
-      
+      /> */}
     </>
   );
 };
