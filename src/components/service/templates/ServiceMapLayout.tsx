@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { debounce } from "lodash";
 
-const MapView: React.FC = () => {
+const ServiceMapLayout: React.FC = () => {
   const [xNECoord, setXNECoord] = useState<number>(0);
   const [yNECoord, setYNECoord] = useState<number>(0);
 
@@ -70,4 +70,4 @@ const MapView: React.FC = () => {
   );
 };
 
-export default MapView;
+export default ServiceMapLayout;
