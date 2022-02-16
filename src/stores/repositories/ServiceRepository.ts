@@ -1,5 +1,5 @@
 import axios from "axios";
-import qs from "qs";
+
 // request functionality only for method. no mapping, no business
 // use qs in making and parsing query string
 const ServiceRepository = {

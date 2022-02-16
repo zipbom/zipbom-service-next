@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const getMobileDetect = userAgent => {
   const isAndroid = () => Boolean(userAgent.match(/Android/i));
@@ -18,7 +18,7 @@ const getMobileDetect = userAgent => {
   };
 };
 const useMobileDetect = () => {
-  useEffect(() => {}, []);
+  // useEffect(() => {}, []);
   const userAgent =
     typeof navigator === "undefined" ? "SSR" : navigator.userAgent;
   return getMobileDetect(userAgent);
