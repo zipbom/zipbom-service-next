@@ -41,6 +41,11 @@ const ServiceMapLayout: React.FC = () => {
       zoom: 15,
     });
 
+    const marker = new naver.maps.Marker({
+      position: new naver.maps.LatLng(37.3595704, 127.105399),
+      map,
+    });
+
     // set bounds_changed listener
     const getBounds = debounce(bounds => {
       setZoom(map.getZoom());

@@ -1,10 +1,13 @@
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
+import Divider from '@mui/material/Divider';
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { jsx, css } from "@emotion/react";
 import CloseIcon from "@mui/icons-material/Close";
+import SideMenuList from "../molcules/SideMenuList";
+import UserProfile from "../molcules/UserProfile";
 
 const SiderBar: React.FC = ({
   onClose = () => {
@@ -18,6 +21,8 @@ const SiderBar: React.FC = ({
     drawer: css`
       .MuiPaper-elevation {
         border-radius: 3.125rem 0 0;
+        width: 18.563rem;
+        padding: 0 0.5rem;
       }
     `,
     drawerHeader: css`
@@ -54,7 +59,9 @@ const SiderBar: React.FC = ({
         <div style={{ display: "flex", margin: "1rem" }}>
           <CloseIcon sx={styles.closeIcon} onClick={toggleDrawer(false)} />
         </div>
-        drawerdrawerdrawerdrawer
+        <UserProfile/>
+        <Divider/>
+        <SideMenuList/>
       </SwipeableDrawer>
     </>
   );
