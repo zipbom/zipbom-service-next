@@ -17,21 +17,34 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*":["src/components/*"],
-      "@hooks/*":["src/hooks/*"],
-      "@pages/*":["pages/*"],
-      "@stores/*":["src/stores/*"],
-      "@stores":["src/stores"],
-      "@repositories/*":["src/stores/repositories/*"],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@stores/*": [
+        "src/stores/*"
+      ],
+      "@stores": [
+        "src/stores"
+      ],
+      "@repositories/*": [
+        "src/stores/repositories/*"
+      ]
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx" 
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
