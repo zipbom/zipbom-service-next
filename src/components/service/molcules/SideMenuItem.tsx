@@ -10,7 +10,7 @@ import SettingIcon from "../../../assets/setting.svg";
 const SideMenuItem: React.FC = () => {
   const menuList = [
     {
-      icon: <ChatIcon width="1.25rem" fill="blue" />,
+      icon: <ChatIcon />,
       name: "채팅",
       onClick: () => console.log("채팅"),
     },
@@ -45,6 +45,7 @@ const SideMenuItem: React.FC = () => {
       {menuList.map(menu => (
         <div
           css={css`
+            height: 2.5rem;
             &:hover {
               cursor: pointer;
             }
@@ -52,7 +53,15 @@ const SideMenuItem: React.FC = () => {
           onClick={menu.onClick}
         >
           {menu.icon}
-          {menu.name}
+          <span
+            css={css`
+              font-size: 1rem;
+              font-weight: 700;
+              margin-left: 0.5rem;
+            `}
+          >
+            {menu.name}
+          </span>
         </div>
       ))}
     </div>
